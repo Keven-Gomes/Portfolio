@@ -45,6 +45,29 @@
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
+    
+    /* Resume Section */
+    .resume-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .resume-content {
+        padding: var(--spacing-lg);
+    }
+    
+    .resume-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .resume-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .resume-contact {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
 }
 
 /* ===========================
@@ -157,6 +180,28 @@
     .tech-tag {
         font-size: 0.75rem;
         padding: 3px 10px;
+    }
+    
+    /* Resume Section */
+    .resume-box {
+        padding: var(--spacing-md);
+    }
+    
+    .resume-icon {
+        font-size: 3rem;
+    }
+    
+    .resume-box h3 {
+        font-size: 1.3rem;
+    }
+    
+    .resume-buttons {
+        gap: var(--spacing-sm);
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+        padding: 12px 24px;
     }
     
     /* Contact Section */
