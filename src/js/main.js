@@ -261,7 +261,7 @@ function fallbackCopy(text) {
     document.body.appendChild(textarea);
     textarea.focus();
     textarea.select();
-}
+    
     try {
         const successful = document.execCommand('copy');
         if (successful) {
@@ -274,7 +274,10 @@ function fallbackCopy(text) {
         alert('❌ Erro ao copiar. Por favor, selecione e copie manualmente.');
     }
     
-    // ===========================
+    document.body.removeChild(textarea);
+}
+
+// ===========================
 // SMOOTH SCROLL NAVIGATION
 // ===========================
 

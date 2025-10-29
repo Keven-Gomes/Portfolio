@@ -584,3 +584,71 @@ footer .text-footer {
         box-shadow: 0 0 0 10px rgba(0, 217, 255, 0);
     }
 }
+
+/* ===========================
+   PRINT STYLES (PDF)
+   =========================== */
+
+@media print {
+    /* Ocultar elementos desnecessários */
+    nav,
+    .resume-actions,
+    .hero-tag,
+    .cta-buttons,
+    header,
+    #about,
+    #projects,
+    #contact,
+    footer {
+        display: none !important;
+    }
+    
+    /* Mostrar apenas o currículo */
+    #resume {
+        padding: 0;
+        page-break-after: avoid;
+    }
+    
+    .resume-content {
+        display: block !important;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 20px !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    .resume-text h1,
+    .resume-text h2,
+    .resume-text h3,
+    .resume-text p,
+    .resume-text ul,
+    .resume-text li {
+        color: black !important;
+    }
+    
+    .resume-text h1 {
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+    }
+    
+    .resume-text h2 {
+        color: #333 !important;
+        border-bottom-color: #ccc !important;
+    }
+    
+    .resume-links a {
+        color: #0066cc !important;
+    }
+    
+    /* Quebras de página adequadas */
+    .resume-text h2 {
+        page-break-after: avoid;
+    }
+    
+    .resume-text ul {
+        page-break-inside: avoid;
+    }
+}
